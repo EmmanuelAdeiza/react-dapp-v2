@@ -22,6 +22,7 @@ export const DEFAULT_MAIN_CHAINS = [
   "bip122:000000000019d6689c085ae165831e93",
   "sui:mainnet",
   "stacks:1",
+  "partisia:Partisia_Blockchain",
 ];
 
 export const DEFAULT_TEST_CHAINS = [
@@ -320,6 +321,9 @@ export enum DEFAULT_SUI_EVENTS {
   SUI_ACCOUNTS_CHANGED = "sui_accountsChanged",
   SUI_CHAIN_CHANGED = "sui_chainChanged",
 }
+
+export enum DEFAULT_PARTISIA_METHODS {}
+export enum DEFAULT_PARTISIA_EVENTS {}
 
 export const REGIONALIZED_RELAYER_ENDPOINTS: RelayerType[] = [
   {

@@ -19,6 +19,7 @@ import { KadenaChainData } from "../chains/kadena";
 import { BtcChainData } from "../chains/bip122";
 import { SuiChainData } from "../chains/sui";
 import { StacksChainData } from "../chains/stacks";
+import { PartisiaChainData } from "../chains/partisia";
 
 /**
  * Types
@@ -84,6 +85,9 @@ export function ChainDataContextProvider({
             break;
           case "stacks":
             chains = StacksChainData;
+            break;
+          case "partisia":
+            chains = PartisiaChainData;
             break;
           default:
             console.error("Unknown chain namespace: ", namespace);

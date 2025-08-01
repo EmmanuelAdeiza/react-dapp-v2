@@ -12,6 +12,7 @@ import * as kadena from "./kadena";
 import * as bip122 from "./bip122";
 import * as sui from "./sui";
 import * as stacks from "./stacks";
+import * as partisia from "./partisia";
 
 import { ChainMetadata, ChainRequestRender } from "../helpers";
 
@@ -42,6 +43,8 @@ export function getChainMetadata(chainId: string): ChainMetadata {
       return sui.getChainMetadata(chainId);
     case "stacks":
       return stacks.getChainMetadata(chainId);
+    case "partisia":
+      return partisia.getChainMetadata(chainId);
     default:
       throw new Error(`No metadata handler for namespace ${namespace}`);
   }
@@ -65,6 +68,8 @@ export function getChainRequestRender(
       return tezos.getChainRequestRender(request);
     case "kadena":
       return kadena.getChainRequestRender(request);
+    case "partisia":
+      return partisia.getChainRequestRender(request);
     default:
       throw new Error(`No render handler for namespace ${namespace}`);
   }
