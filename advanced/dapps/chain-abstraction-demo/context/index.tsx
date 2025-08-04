@@ -48,6 +48,10 @@ const modal = createAppKit({
         'wallet_scanQRCode',
         'wallet_getAssets',
         'wallet_checkout',
+      ],
+      partisia: [
+        'get_accounts',
+        'sign_transaction'
       ]
     },
   }

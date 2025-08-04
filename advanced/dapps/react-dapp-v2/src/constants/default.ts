@@ -322,8 +322,14 @@ export enum DEFAULT_SUI_EVENTS {
   SUI_CHAIN_CHANGED = "sui_chainChanged",
 }
 
-export enum DEFAULT_PARTISIA_METHODS {}
-export enum DEFAULT_PARTISIA_EVENTS {}
+
+export enum DEFAULT_PARTISIA_METHODS {
+  PARTISIA_GET_ACCOUNTS = "get_accounts",
+  PARTISIA_SIGN_TRANSACTION = "sign_transaction",
+}
+export enum DEFAULT_PARTISIA_EVENTS {
+  PARTISIA_ACCOUNTS_CHANGED = "accountsChanged",
+}
 
 export const REGIONALIZED_RELAYER_ENDPOINTS: RelayerType[] = [
   {
